@@ -1,133 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EuroFix Cleaning & Refurbish</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Cleaning & Maintenance Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      background: linear-gradient(135deg, #ffd700, #1e90ff);
+    }
 
-<style>
-:root{
-    --blue:#0A3D62;
-    --yellow:#F9CA24;
-    --light:#F4F6F7;
-    --dark:#111;
-}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-body{background:var(--light);color:var(--dark);line-height:1.5;}
-header{background:var(--blue);color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;}
-header h1{font-size:24px;font-weight:700;}
-nav a{color:white;text-decoration:none;margin-left:16px;font-weight:500;font-size:14px;}
-.hero{background:linear-gradient(rgba(10,61,98,0.8), rgba(10,61,98,0.8)),
-url('https://images.unsplash.com/photo-1581579185169-8f3e3d6c04b7');background-size:cover;background-position:center;color:white;padding:110px 8%;text-align:center;}
-.hero h2{font-size:38px; margin-bottom:16px;}
-.hero p{font-size:16px;max-width:680px;margin:auto;}
-.section{padding:60px 8%;}
-.section h2{text-align:center;margin-bottom:32px;font-size:28px;color:var(--blue);}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
-.card{background:white;padding:24px;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.08);transition:0.25s;}
-.card:hover{transform:translateY(-4px);}
-.card h3{margin-bottom:10px;color:var(--blue);}
-.mission{background:var(--yellow);color:black;text-align:center;padding:50px 8%;font-size:16px;}
-.contact{background:var(--blue);color:white;text-align:center;padding:50px 8%;}
-.contact p{margin:8px 0;font-size:15px;}
-footer{text-align:center;padding:18px;background:#000;color:white;font-size:13px;}
-.business-card-section{padding:60px 8%;background:white;}
-.business-card{max-width:340px;height:190px;background:linear-gradient(135deg,var(--blue),var(--yellow));color:white;border-radius:12px;padding:18px;box-shadow:0 5px 14px rgba(0,0,0,0.2);}
-.business-card h3{font-size:20px;margin-bottom:8px;}
-.business-card p{font-size:13px;margin-top:4px;}
-@media(max-width:768px){
-    .hero h2{font-size:26px;}
-}
-</style>
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #1e90ff;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      font-weight: bold;
+    }
+
+    /* Business card preview */
+    .business-card {
+      max-width: 350px;
+      margin: 40px auto;
+      padding: 25px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1e90ff, #ffd700);
+      color: #000;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .business-card h3 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .business-card p {
+      margin: 8px 0;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-<h1>EuroFix Cleaning & Refurbish</h1>
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <header>
+    <h1>Professional Cleaning & Maintenance Services</h1>
+    <p>Reliable • Professional • Available 24/7</p>
+  </header>
 
-<section class="hero">
-<h2>Professional Cleaning, Maintenance & Refurbishment</h2>
-<p>International services for flats, buildings, and commercial areas—delivered with precision, safety, and reliability.</p>
-</section>
+  <section>
+    <h2>About Us</h2>
+    <p>
+      We provide high-quality cleaning and general maintenance services for residential, commercial, and public buildings across London. With over six years of professional experience in hospitality, commercial cleaning, and facilities support, we are committed to delivering safe, hygienic, and well-maintained environments.
+    </p>
+    <p>
+      Our services are built on reliability, attention to detail, and respect for every space we maintain. We understand the importance of cleanliness and safety in busy buildings and public areas, and we take pride in delivering consistent, professional results.
+    </p>
+  </section>
 
-<section id="about" class="section">
-<h2>About EuroFix</h2>
-<p><strong>EuroFix Cleaning & Refurbish</strong> is an international company founded on years of hands‑on experience in cleaning, facilities, and building environments across London and beyond. We specialize in professional cleaning, maintenance, and refurbishment for residential and commercial properties.</p>
+  <section>
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to provide dependable, high-standard cleaning and maintenance services that create clean, safe, and welcoming environments. We aim to build long-term trust with our clients through professionalism, flexibility, and 24/7 availability.
+    </p>
+  </section>
 
-<p>Our founder brings more than six years in hospitality and commercial cleaning, a strong commitment to hygiene and safety, and practical construction knowledge. With certifications in electrical installation Level 2 & 3, the City & Guilds 2382‑22 18th Edition qualification, and Level 3 solar panel training, we understand the technical and safety demands of modern properties. This expertise lets us provide services that go beyond surface cleaning—supporting repairs, installations, and upgrades with professionalism and care.</p>
+  <section>
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Commercial Cleaning</h3>
+        <p>Offices, leisure facilities, retail spaces, and public buildings cleaned to professional standards.</p>
+      </div>
+      <div class="card">
+        <h3>Residential Cleaning</h3>
+        <p>Regular and deep cleaning services for residential buildings and shared areas.</p>
+      </div>
+      <div class="card">
+        <h3>Facilities & Maintenance Support</h3>
+        <p>General maintenance support, inspections, and upkeep to ensure buildings remain safe and functional.</p>
+      </div>
+      <div class="card">
+        <h3>Emergency & Out-of-Hours Cleaning</h3>
+        <p>24/7 availability for urgent cleaning and maintenance requirements.</p>
+      </div>
+    </div>
+  </section>
 
-<h3>Mission statement</h3>
-<p>We exist to deliver excellence in cleaning and refurbishment through skilled work, dependable service, and modern practices. Our mission is to improve living and working environments by combining meticulous attention to detail, health and safety compliance, and respectful customer care—every time, everywhere.</p>
-</section>
+  <section>
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>Over 6 years of professional experience</li>
+      <li>Strong health & safety awareness (COSHH compliant)</li>
+      <li>Reliable, punctual, and detail-oriented service</li>
+      <li>Excellent communication and customer service</li>
+      <li>Available 24 hours a day, 7 days a week</li>
+    </ul>
+  </section>
 
-<section id="services" class="section">
-<h2>Our services</h2>
-<div class="services">
-<div class="card">
-<h3>Professional Cleaning</h3>
-<p>Deep cleaning, post‑construction cleaning, office and public area cleaning, end‑of‑tenancy, and ongoing maintenance cleaning for any property type.</p>
-</div>
-<div class="card">
-<h3>Building Maintenance</h3>
-<p>Routine repairs, painting, plumbing support, electrical assistance, and general property upkeep to keep buildings safe and functional.</p>
-</div>
-<div class="card">
-<h3>Refurbishment</h3>
-<p>Complete renovation of flats or buildings, including painting, flooring, fixture upgrades, and structural improvements for refreshed spaces.</p>
-</div>
-<div class="card">
-<h3>Commercial Areas</h3>
-<p>Specialized solutions for offices, retail, leisure centres, public buildings, and large facilities to maintain professional standards and appearance.</p>
-</div>
-</div>
-</section>
+  <section>
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p><strong>Name:</strong> Jose Chalan</p>
+      <p><strong>Email:</strong> ariasivan3@gmail.com</p>
+      <p><strong>Service Area:</strong> London</p>
+      <p><strong>Working Hours:</strong> 24 / 7</p>
+    </div>
+  </section>
 
-<section class="mission">
-<h2>Our commitment</h2>
-<p>Quality. Reliability. Professionalism. We deliver results that exceed expectations and create lasting value. Every project is guided by safety, efficiency, and transparent communication.</p>
-</section>
+  <section>
+    <h2>Business Card Preview</h2>
+    <div class="business-card">
+      <h3>Jose Chalan</h3>
+      <p><strong>Cleaning & Maintenance Services</strong></p>
+      <p>Professional • Reliable • 24/7</p>
+      <p>📧 ariasivan3@gmail.com</p>
+      <p>📍 London</p>
+    </div>
+    <p style="text-align:center; font-size:0.9rem;">(This design can be printed or shared digitally)</p>
+  </section>
 
-<section id="contact" class="contact">
-<h2>Contact us</h2>
-<p>Email: eurofixarias3@gmail.com</p>
-<p>Phone: +44 07881 807595</p>
-<p>International service coverage – ready to support clients in multiple regions.</p>
-</section>
-
-<!-- Spanish section -->
-<section class="section">
-<h2>Versión en español</h2>
-<p><strong>EuroFix Cleaning & Refurbish</strong> ofrece servicios internacionales de limpieza profesional, mantenimiento y renovación para pisos, edificios y espacios comerciales. Con amplia experiencia en entornos comerciales y de hospitalidad, brindamos soluciones eficientes, seguras y de alta calidad.</p>
-<p><strong>Misión:</strong> Mejorar los espacios de vida y trabajo combinando precisión, responsabilidad y excelencia profesional, siempre cuidando la seguridad y satisfacción del cliente.</p>
-</section>
-
-<!-- French section -->
-<section class="section">
-<h2>Version française</h2>
-<p><strong>EuroFix Cleaning & Refurbish</strong> fournit des services internationaux de nettoyage professionnel, maintenance et rénovation complète d’appartements, bâtiments et espaces commerciaux. Forts d’une expérience solide au Royaume‑Uni et dans des environnements commerciaux, nous offrons des solutions sûres, efficaces et de grande qualité.</p>
-<p><strong>Mission :</strong> Améliorer les lieux de vie et de travail en alliant précision, fiabilité et excellence professionnelle, en veillant toujours à la sécurité et à la satisfaction des clients.</p>
-</section>
-
-<!-- Business card -->
-<section class="business-card-section">
-<h2>Business card</h2>
-<div class="business-card">
-<h3>EuroFix Cleaning & Refurbish</h3>
-<p>Cleaning | Maintenance | Refurbishment</p>
-<p>Email: eurofixarias3@gmail.com</p>
-<p>Phone: +44 07881 807595</p>
-</div>
-</section>
-
-<footer>
-© 2026 EuroFix Cleaning & Refurbish – All rights reserved
-</footer>
+  <footer>
+    Professional Cleaning & Maintenance Services | Available 24/7
+  </footer>
 
 </body>
 </html>
